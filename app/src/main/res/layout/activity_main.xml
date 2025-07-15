@@ -11,6 +11,7 @@
         android:id="@+id/imageView_header"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
+        android:contentDescription="@string/cd_null"
         app:layout_constraintHeight_percent="0.2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -19,6 +20,7 @@
 
     <ImageButton
         android:id="@+id/button_2J"
+        android:contentDescription="@string/cd_null"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:scaleType="centerCrop"
@@ -37,6 +39,7 @@
         android:scaleType="centerCrop"
         android:src="@drawable/button3j_bg"
         android:background="@drawable/button_ripple"
+        android:contentDescription="@string/cd_null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.267"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,6 +50,7 @@
         android:id="@+id/button_4J"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:contentDescription="@string/cd_null"
         android:scaleType="centerCrop"
         android:src="@drawable/button4j_bg"
         android:background="@drawable/button_ripple"

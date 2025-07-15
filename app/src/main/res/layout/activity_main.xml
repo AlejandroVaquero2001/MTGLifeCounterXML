@@ -7,13 +7,87 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView_header"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/raw_header"
+        />
+
+    <ImageButton
+        android:id="@+id/button_2J"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/button2j_bg"
+        android:background="@drawable/button_ripple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.267"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_header"
+        />
+
+    <ImageButton
+        android:id="@+id/button_3J"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/button3j_bg"
+        android:background="@drawable/button_ripple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.267"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_2J"
+        />
+
+    <ImageButton
+        android:id="@+id/button_4J"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/button4j_bg"
+        android:background="@drawable/button_ripple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.267"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_3J" />
+
     <TextView
+        android:id="@+id/text_2j"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/ImageButtonViewText_2J"
+        app:layout_constraintBottom_toBottomOf="@+id/button_2J"
+        app:layout_constraintEnd_toEndOf="@+id/button_2J"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView_header"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"/>
 
+    <TextView
+        android:id="@+id/text_3j"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ImageButtonViewText_3J"
+        app:layout_constraintBottom_toBottomOf="@+id/button_3J"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/button_3J"
+        app:layout_constraintTop_toBottomOf="@+id/button_2J"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/text_4j"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ImageButtonViewText_4J"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button_4J"
+        app:layout_constraintStart_toStartOf="@+id/button_4J"
+        app:layout_constraintTop_toBottomOf="@+id/button_3J"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

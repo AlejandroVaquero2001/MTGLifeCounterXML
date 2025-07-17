@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MTGLifeCounterXML"
         tools:targetApi="31">
+        <activity android:name=".DieActivity"/>
+        <activity android:name=".PlayerFunctionsActivity"/>
+        <activity android:name=".PlayerManagerActivity"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

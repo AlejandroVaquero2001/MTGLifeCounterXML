@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">MTGLifeCounterXML</string>
     <string name="cd_null">-</string>
-    <string name="hp_commander">-</string>
+    <string name="hp_commander">40</string>
     <string name="ImageButtonViewText_2J">2 JUGADORES</string>
     <string name="ImageButtonViewText_3J">3 JUGADORES</string>
     <string name="ImageButtonViewText_4J">4 JUGADORES</string>

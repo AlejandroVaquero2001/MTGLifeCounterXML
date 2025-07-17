@@ -14,11 +14,13 @@ class DieActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_die)
 
-
+        val numeroJugadores = intent.getIntExtra("numeroJugadores",2)
         var dieResult = findViewById<TextView>(R.id.text_dieResult)
         dieResult.visibility = View.GONE
         val dieButton = findViewById<ImageButton>(R.id.button_die)
         val toGameButton = findViewById<ImageButton>(R.id.button_toGame)
+
+
         toGameButton.visibility = View.GONE
         dieButton.setOnClickListener {
             dieResult.text = (1..20).random().toString()
@@ -26,7 +28,8 @@ class DieActivity : AppCompatActivity() {
             toGameButton.visibility = View.VISIBLE
         }
         toGameButton.setOnClickListener {
-            val intent = Intent(this, PlayerFunctionsActivity::class.java)
+            //val intent = Intent(this, PlayerManagerActivity::class.java)
+            intent.putExtra("numeroJugadores", numeroJugadores)
             startActivity(intent)
         }
     }

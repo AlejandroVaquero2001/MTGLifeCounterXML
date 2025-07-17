@@ -13,6 +13,7 @@ class PlayerFunctionsActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_player)
 
+        val numeroJugadores = intent.getIntExtra("numeroJugadores",2)
         val currentLife = findViewById<TextView>(R.id.text_lifeTotal)
         val hpUpButton = findViewById<ImageButton>(R.id.button_CountUP)
         val hpDownButton = findViewById<ImageButton>(R.id.button_CountDown)
@@ -27,5 +28,6 @@ class PlayerFunctionsActivity : AppCompatActivity() {
             val nuevoHP = hpActual - 1
             currentLife.text = nuevoHP.toString()
         }
+
     }
 }

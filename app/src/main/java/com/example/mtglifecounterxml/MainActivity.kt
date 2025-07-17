@@ -15,16 +15,19 @@ class MainActivity : AppCompatActivity() {
         val button2J = findViewById<ImageButton>(R.id.button_2J)
         button2J.setOnClickListener {
             val intent = Intent(this, DieActivity::class.java)
+            intent.putExtra("numeroJugadores", 2)
             startActivity(intent)
         }
         val button3J = findViewById<ImageButton>(R.id.button_3J)
         button3J.setOnClickListener {
             val intent = Intent(this, DieActivity::class.java)
+            intent.putExtra("numeroJugadores", 3)
             startActivity(intent)
         }
         val button4J = findViewById<ImageButton>(R.id.button_4J)
         button4J.setOnClickListener {
             val intent = Intent(this, DieActivity::class.java)
+            intent.putExtra("numeroJugadores", 4)
             startActivity(intent)
         }
 
